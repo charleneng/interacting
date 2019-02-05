@@ -1,0 +1,105 @@
+* {
+	box-sizing: content-box;
+}
+body {
+	color: black;
+	background-image: url(images/night1.jpg);
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 24px;
+	height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.heart {
+	width: 20em;
+	height: 20em;
+	margin-left: 10cm;
+	overflow: hidden;
+    background-image: url(images/heart.png);
+    background-size: 109%;
+    background-position: center;
+    transform: scale(0.25);
+    transition: transform 6s, box-shadow 3s;
+}
+
+#zoom .heart {
+	transform: scale(1);
+}
+
+
+button {
+	color: inherit;
+	border: 2px solid;
+	background-color: white;
+	outline: none;
+	border-radius: 0;
+	padding: 0.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 1em auto;
+	cursor: pointer;
+}
+
+.x{
+	margin-left: 10cm;
+	
+}
+.trigger {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+	padding: 0;
+	background-color: white;
+	color: black;
+	line-height: 1.4;
+	border-radius: 50%;
+    font-size: 1.25em;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 1s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0);
+}
+.trigger:hover {
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+	/*          X   Y   blur colour  */
+}
+
+#zoom .trigger {
+	transform: rotate(135deg);
+}
+
+
+.red {
+	box-shadow: : 10em 0 10em yellow inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
